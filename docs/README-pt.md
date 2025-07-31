@@ -15,7 +15,7 @@ A série **[Descomplicando Kafka](TODO)** (🎥 <u>disponível no YouTube</u>) e
 
 ---
 
-## **Episódios**
+##  📺 **Episódios**
 Cada vídeo é dedicado a um aspecto fundamental do Kafka, utilizando a analogia de uma ferrovia para facilitar o entendimento. Aqui estão os tópicos abordados:
 
 | **#** | **Episódio**                                | **Descrição**                                                                                                              |
@@ -34,7 +34,7 @@ Cada vídeo é dedicado a um aspecto fundamental do Kafka, utilizando a analogia
 
 ---
 
-## **Tecnologias Utilizadas**
+## 💻 **Tecnologias Utilizadas**
 - **Java**: Linguagem principal para implementar o exemplo de Kafka.
 - **Spring Boot**: Framework para simplificar o desenvolvimento.
 - **Apache Kafka**: Plataforma de mensageria distribuída.
@@ -42,23 +42,65 @@ Cada vídeo é dedicado a um aspecto fundamental do Kafka, utilizando a analogia
 
 ---
 
-## **Ferramentas Adicionais**
-O projeto inclui um arquivo `docker-compose.yml` que utiliza diversas ferramentas para rodar o Kafka localmente. Abaixo estão os links para as páginas oficiais de cada ferramenta:
+## 🛠️ **Ferramentas Adicionais**
 
-- 🔗 **[Apache Kafka](https://kafka.apache.org)**: Plataforma de mensageria distribuída para transmissão de dados em tempo real.
-- 🔗 **[Zookeeper](https://zookeeper.apache.org)**: Serviço de coordenação para gerenciar brokers e metadados do Kafka.
-- 🔗 **[Kafdrop](https://github.com/obsidiandynamics/kafdrop)**: Interface web para monitorar tópicos, partições, mensagens e grupos de consumidores.
+O projeto inclui um arquivo `docker-compose.yml` que utiliza ferramentas para rodar o Kafka localmente em modo KRaft. Abaixo estão os links para as páginas oficiais de cada ferramenta usada:
 
+- 🔗 **[Apache Kafka (modo KRaft)](https://kafka.apache.org/documentation/#kraft)**: Plataforma de mensageria distribuída para transmissão de dados em tempo real, rodando no modo KRaft, que dispensa o uso do Zookeeper.
+- 🔗 **[Kafka UI - Provectus Labs](https://github.com/provectus/kafka-ui)**: Interface web para monitorar tópicos, partições, mensagens e grupos de consumidores.
 
 ---
 
-## **Como Usar**
+## 📚 **Aprenda Comigo**
 Este projeto acompanha a série de vídeos **"Descomplicando Kafka"**. Cada vídeo aborda um aspecto diferente da plataforma, utilizando analogias simples para ensinar conceitos complexos. O código de exemplo está disponível para acompanhamento e pode ser adaptado conforme necessário.
 
 - 🎥 **Assista à playlist no YouTube**: [youtube.com/@gabrielbragadev](https://youtube.com/@gabrielbragadev)
-- 🐙 **Acesse o repositório no GitHub**: [github.com/bragabriel/products-api-java](https://github.com/bragabriel/products-api-java)
 
 ---
 
-## **Contribuições**
-Contribuições e feedbacks são sempre bem-vindos! Fique à vontade para compartilhar suas ideias e sugestões — elas são muito importantes para o aprimoramento do projeto. 💡🚀
+## ▶️ **Como Rodar**
+
+### Rodando o Kafka localmente com Docker
+
+Para rodar o Kafka localmente neste projeto, siga os passos:
+
+1. **Gerar um novo Cluster ID para Kafka KRaft**
+   1. Execute o container oficial do Kafka em modo interativo:
+    
+       ```bash
+       docker run -it --rm bitnami/kafka:latest bash
+       ```
+    
+   2. Dentro do shell do container, rode:
+    
+       ```
+       /opt/bitnami/kafka/bin/kafka-storage.sh random-uuid
+       ```
+   3. Esse comando vai gerar um UUID — **<u>copie esse valor</u>**. <br><br>
+
+2. **Atualize o arquivo docker-compose.yml**
+    
+    * No docker-compose.yml, configure a variável de ambiente `KAFKA_KRAFT_CLUSTER_ID` com o UUID gerado no passo 
+   anterior.<br><br>
+
+3. **Inicie o cluster Kafka**
+
+   Execute:
+    ```
+    docker-compose up -d
+    ```
+    Isso vai subir o Kafka no modo KRaft com o cluster ID correto.<br><br>
+
+4. **Verifique se o Kafka está rodando**
+
+    Use o comando:
+    ```
+    docker-compose logs -f kafka
+    ```
+    para acompanhar os logs do Kafka.
+
+--- 
+
+## 💡**Contribuições**
+Contribuições e feedbacks são sempre bem-vindos! Fique à vontade para compartilhar suas ideias e sugestões. Elas são 
+muito importantes para o aprimoramento do projeto. 💡🚀
