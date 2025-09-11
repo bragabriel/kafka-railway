@@ -18,19 +18,13 @@ The series **[Simplifying Kafka](TODO)** (🎥 <u>available on YouTube</u>) expl
 ## 📺 **Episodes**
 Each video is dedicated to a fundamental aspect of Kafka, using the railway analogy to make understanding easier. Here are the topics covered:
 
-| **#** | **Episode**                                | **Description**                                                                                                            |
-|-------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| **1** | **Introduction**                           | *"Simplifying Kafka: Explaining Kafka as if You Were 5 Years Old!"* - Introducing the learning process in a simplified way.|
-| **2** | **Topic → Track**                          | *"Simplifying Kafka: How Trains Find Their Path"* - How data (messages) follow tracks (topics).                           |
-| **3** | **Producer → Farmer**                      | *"Simplifying Kafka: How Farmers Send Products (Messages) to the City"* - The role of the producer in message delivery.   |
-| **4** | **Message → Products in the Wagon**        | *"Simplifying Kafka: How Messages Are Loaded into Wagons"* - How messages are organized and transported.                  |
-| **5** | **Broker → Train Station**                 | *"Simplifying Kafka: The Role of the Train Station (Broker) in the Kafka World"* - How brokers facilitate message delivery.|
-| **6** | **Partition → Specific Track**             | *"Simplifying Kafka: Avoiding Traffic Jams on the Tracks (Partitions)"* - Dividing messages into partitions to optimize performance. |
-| **7** | **Hot Partition → Overloaded Wagon**       | *"Simplifying Kafka: What Happens When a Wagon Gets Too Full (Hot Partitions)"* - Impact of overloads on the system.      |
-| **8** | **Consumer Group → Market Network**        | *"Simplifying Kafka: How to Distribute Product Loads Across Markets"* - Teamwork among consumers.                         |
-| **9** | **Rebalance → Logistics Change**           | *"Simplifying Kafka: How to Re-Organize Wagons If One Breaks? (Rebalance)"* - Redistributing message loads.               |
-| **10**| **Offset → Starting Point**                | *"Simplifying Kafka: How to Know Where to Start Picking Products (Offsets Explained)"* - Tracking messages.               |
-| **11**| **Producer Acknowledgment → Confirmation** | *"Simplifying Kafka: How the Farmer Knows Their Products Reached the Destination"* - Delivery guarantees.                 |
+| **#** | **Episode**                                                     | **Description**                                                                                                                 |
+|-------|-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| **1** | [**Explaining Kafka Like You’re 5 Years Old!**](https://youtu.be/vDWnk6szO-4)                | Introduction to learning Kafka in a simple and easy-to-understand way.                                                          |
+| **2** | [**Topics, Producers, Consumers, and Messages - IN PRACTICE!**](https://youtu.be/_2Ugawe9WAY) | Simplifying Kafka: How trains deliver corn (messages) to markets (consumers).                                                 |
+| **3** | [**The DIFFERENCE Between 1 CONSUMER and a GROUP (Consumer Groups Explained)**](https://youtu.be/U3uYMg526MY) | Simplifying Kafka: The difference between 1 CONSUMER and a GROUP (Partitions, Consumer Groups, and Parallelism - Understand it!). |
+| **4** | **Consumer Groups, Partitions, and Parallelism - IN PRACTICE!** | Simplifying Kafka: How parallelism actually works in Kafka.                                                                    |
+
 
 ---
 

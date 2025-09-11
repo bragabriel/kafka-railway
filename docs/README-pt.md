@@ -18,19 +18,12 @@ A série **[Descomplicando Kafka](TODO)** (🎥 <u>disponível no YouTube</u>) e
 ##  📺 **Episódios**
 Cada vídeo é dedicado a um aspecto fundamental do Kafka, utilizando a analogia de uma ferrovia para facilitar o entendimento. Aqui estão os tópicos abordados:
 
-| **#** | **Episódio**                                | **Descrição**                                                                                                              |
-|-------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| **1** | **Introdução**                             | *"Descomplicando Kafka: Explicando Kafka Como se Você Tivesse 5 Anos!"* - Apresentação do aprendizado de Kafka de forma simples. |
-| **2** | **Tópico → Trilho**                        | *"Descomplicando Kafka: Como os Trens Encontram Seu Caminho"* - Como os dados (mensagens) seguem por trilhos (tópicos).    |
-| **3** | **Produtor → Fazendeiro**                  | *"Descomplicando Kafka: Como os Fazendeiros Enviam Produtos (Mensagens) Para a Cidade"* - O papel do produtor na entrega.  |
-| **4** | **Mensagem → Produtos no Vagão**           | *"Descomplicando Kafka: Como as Mensagens São Carregadas nos Vagões"* - Como as mensagens são organizadas e transportadas. |
-| **5** | **Broker → Estação de Trem**               | *"Descomplicando Kafka: O Papel da Estação de Trem (Broker) no Mundo do Kafka"* - Como os brokers facilitam a entrega.    |
-| **6** | **Partição → Trilho Específico**           | *"Descomplicando Kafka: Evitando Congestionamento nos Trilhos (Partições)"* - Divisão de mensagens entre partições.       |
-| **7** | **Hot Partition → Vagão Sobrecargado**     | *"Descomplicando Kafka: O Que Acontece Quando Um Vagão Fica Cheio Demais (Hot Partitions)"* - Impacto da sobrecarga.      |
-| **8** | **Consumer Group → Rede de Mercados**      | *"Descomplicando Kafka: Como Dividir a Carga de Produtos Entre os Mercados"* - Trabalho em equipe dos consumidores.        |
-| **9** | **Rebalance → Mudança na Logística**       | *"Descomplicando Kafka: Como Re-Organizar os Vagões se um deles quebrar? (Rebalance)"* - Redistribuição de mensagens.      |
-| **10**| **Offset → Ponto de Partida**              | *"Descomplicando Kafka: Como Saber Onde Começar a Pegar os Produtos (Offsets)"* - Rastreamento das mensagens.              |
-| **11**| **Producer Acknowledgment → Confirmação**  | *"Descomplicando Kafka: Como o Fazendeiro Sabe Que Seus Produtos Chegaram no Destino"* - Garantias de entrega.            |
+| **#** | **Episódio**                                                     | **Descrição**                                                                                                                 |
+|-------|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| **1** | [**Explicando Kafka Como se Você Tivesse 5 Anos!**](https://youtu.be/vDWnk6szO-4)                | Apresentação do aprendizado de Kafka de forma simples.                                                                        |
+| **2** | [**Tópicos, Produtores, Consumidores e Mensagens - NA PRÁTICA!**](https://youtu.be/_2Ugawe9WAY)  | Descomplicando Kafka: Como os trens levam os milhos (mensagens) até os mercados (consumers).                                   |
+| **3** | [**A DIFERENÇA entre 1 CONSUMIDOR e um GRUPO (Consumer Groups Explicados)**](https://youtu.be/U3uYMg526MY)                                        | Descomplicando Kafka: A diferença entre 1 CONSUMIDOR e um GRUPO (Partições, Grupo de Consumidores e Paralelismo - Entenda!). |
+| **4** | **Grupo de Consumidores, Partições e Paralelismo - NA PRÁTICA!** | Descomplicando Kafka: Como funciona o tal do paralelismo no Kafka.                                                           |
 
 ---
 
