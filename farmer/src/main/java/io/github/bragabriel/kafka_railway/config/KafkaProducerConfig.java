@@ -1,6 +1,7 @@
 package io.github.bragabriel.kafka_railway.config;
 
 import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.clients.producer.RoundRobinPartitioner;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,6 +22,13 @@ public class KafkaProducerConfig {
         configProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:19092");
         configProps.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         configProps.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+
+        //Sticky Partition (batch)
+        //configProps.put(ProducerConfig.BATCH_SIZE_CONFIG, 1); // 1byte
+        //configProps.put(ProducerConfig.LINGER_MS_CONFIG, 0); // 0ms timeout
+
+        //Robin Round
+        //configProps.put(ProducerConfig.PARTITIONER_CLASS_CONFIG, RoundRobinPartitioner.class);
 
         return new DefaultKafkaProducerFactory<>(configProps);
     }

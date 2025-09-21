@@ -10,5 +10,5 @@ package io.github.bragabriel.kafka_railway.model;
  * @param route The topic in Kafka (the track) where the message will be sent.
  * @param content The message content (the cargo) that is being sent.
  */
-public record ProductMessage(String route, String content) {
+public record ProductMessage(String route, String content, String key) {
 }
